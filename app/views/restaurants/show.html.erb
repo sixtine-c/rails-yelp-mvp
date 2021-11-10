@@ -1,6 +1,5 @@
 <div class="container">
 <h1><%= @restaurant.name %></h1>
-<%= link_to 'add a review',  new_restaurant_review_path(@restaurant) %>
 
 <h2><%= @restaurant.category %> - <%= @restaurant.address %></h2>
 
@@ -11,5 +10,6 @@
   <% end %>
 </ul>
 
+<%= link_to 'add a review',  new_restaurant_review_path(@restaurant) %> -
 <%= link_to "back to restaurants", restaurants_path  %>
 </div>
